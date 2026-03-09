@@ -14,7 +14,13 @@ const app = express();
 connectDB();
 
 // ── Middleware ─────────────────────────────────────────────────────
-app.use(cors());
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL || "*", // Set FRONTEND_URL in Render dashboard
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type"],
+  })
+);
 app.use(express.json());
 
 // ── API Routes ─────────────────────────────────────────────────────
