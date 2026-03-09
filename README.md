@@ -1,6 +1,6 @@
 # Rayeva AI Systems
 
-> AI-Powered Modules for Sustainable Commerce — MERN Stack
+> AI-Powered Modules for Sustainable Commerce — MERN Stackk
 
 ## Table of Contents
 
